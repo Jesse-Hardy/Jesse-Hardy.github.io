@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Coda+Caption&display=swap');
+/* Practice CustomFonts Style Sheet */
+
+.websafe{
+    font-family: Arial, Courier, "Courier New";
+}
+.google {
+    font-family: 'Coda Caption', sans-serif;
+    font-size: x-large;
+}
