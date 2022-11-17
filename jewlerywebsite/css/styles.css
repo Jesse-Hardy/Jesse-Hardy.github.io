@@ -1,0 +1,53 @@
+
+/* Jesse hardy November 17th 2022 */ 
+#outerwrapper {	
+	border-radius: 15%;
+	background: rgba(243,205,170, 0.4);
+	width: 70%;
+	margin-right:auto;
+	margin-left:auto;
+	margin-top: 4%;
+}
+
+html {
+	background-image: url("../image/jewelry.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: top;
+}
+footer {
+	font-size: 1em;
+	text-align: center;
+	padding: 10px;
+}
+main {
+	background-image:  linear-gradient(#FFFFFF,#F0F9E6);
+	padding: 10px;
+	margin: 20px;
+	border-radius: 2em;
+	font-size: 1.25em;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#outerwrapper img {
+	float: left;
+	border-radius: 150px;
+}
+.addrightmargin {
+	margin-right: 10%;
+}
+nav ul{
+	font-size: 1.5em;
+	list-style-type: none;
+}
+nav {
+	float: none;
+}
+header h1 {
+	font-family: 'Pacifico', cursive;
+	font-size: 4em;
+}
+header h2 {
+	font-family: 'Courier New', Courier, monospace;
+	font-style: italic;
+	font-size: 2em;
+}
