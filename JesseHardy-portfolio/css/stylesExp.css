@@ -1,0 +1,60 @@
+.projects {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.projectbox {
+    background: #d7f4f8e0;
+    border: 1px solid #24dcf5;
+    display: flex;
+    margin: 10px;
+    flex-direction:row;
+    width: 31%;
+    justify-content: stretch;
+}
+
+.projectbox h4.header {
+    background:rgb(177, 226, 235); 
+    color: #000000;
+    padding: 15px;
+}
+
+.projectbox img {
+    margin-bottom: 10px;
+}
+
+.projectbox a.button {
+    display:flow-root;
+    width: 50%;
+    margin: 10px auto;
+    color: #000000;
+    background:rgb(0, 215, 248);  
+    text-align:right;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: auto;
+}
+footer {
+    clear: left;
+}
+table.customTable {
+    width: 100%;
+    background-color: #afe5ec;
+    border-collapse: collapse;
+    border-width: 4px;
+    border-color: #00f7ff;
+    border-style: solid;
+    color: #000000;
+  }
+  
+  table.customTable td, table.customTable th {
+    border-width: 4px;
+    border-color: #00f7ff;
+    border-style: solid;
+    padding: 6px;
+  }
+  
+  table.customTable thead {
+    background-color: #00f7ff;
+  }
