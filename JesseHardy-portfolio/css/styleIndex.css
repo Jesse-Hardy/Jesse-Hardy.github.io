@@ -1,8 +1,7 @@
-.center {
-    display:flex;
-    margin-left: 19%;
-    margin-right: 20%;
-    width: auto;
-    border-radius: 30%;
-    height: auto;
-  }
+main {
+  background-image: url(../image/WebsiteBanner.png);
+  width: auto;
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
