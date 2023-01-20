@@ -1,23 +1,35 @@
 div {
-    margin: 10px;
+  margin: 10px;
 }
 
 label {
-    margin-right: 15px;
-    width: 150px;
-    display: inline-block;
+  margin-right: 15px;
+  width: 150px;
+  display: inline-block;
 }
 
 input {
-    font-size: 1.25rem;
-    padding: 5px;
-    border: 1px solid #333333; 
-    transition: all 0.5s ease;
+  font-size: 1.25rem;
+  padding: 5px;
+  border: 1px solid #333333;
+  transition: all 0.5s ease;
 }
 
 input:focus {
-    font-size: 1.35rem;
-    padding: 10px;
-    border: 2px solid #008800;
-    outline: none;
+  font-size: 1.35rem;
+  padding: 10px;
+  border: 2px solid #008800;
+  outline: none;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 4%;
+
+  text-align: center;
+}
+h1,
+h3,
+p {
+  text-align: center;
 }
