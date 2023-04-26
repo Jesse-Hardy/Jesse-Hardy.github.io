@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Jesse Hardy Life Coaching home page</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/about.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="logo" href="index.html"></a>
+      <input type="checkbox" id="menu-btn" class="menu-btn" />
+      <label class="menu-icon" for="menu-btn">
+        <span class="nav-icon"></span>
+      </label>
+      <ul class="menu">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="service.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </header>
+
+    <!-- <div class="headshot">
+      <span><h1>About Me</h1></span>
+      <img src="/images/headshot.png" alt="Headshot" /><br />
+      <img src="/images/about.png" alt="About" />
+    </div>-->
+    <div class="center-image">
+      <div
+        class="cycle-slideshow"
+        data-cycle-fx="fadeout"
+        data-cycle-timeout="20000"
+        data-cycle-caption="#adv-custom-caption"
+        data-cycle-caption-template="Slide {{slideNum}}: {{cycleTitle}}"
+      >
+        <img
+          src="/images/headshot.png"
+          alt="Headshot"
+          data-cycle-title="Headshot"
+        />
+        <img src="/images/about.png" alt="About" data-cycle-title="About" />
+        <!-- empty element for caption -->
+        <div id="adv-custom-caption"></div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="/JS/jquery.cycle2.min.js"></script>
+  </body>
+</html>

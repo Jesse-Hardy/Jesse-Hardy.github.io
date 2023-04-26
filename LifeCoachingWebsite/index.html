@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Jesse Hardy Life Coaching home page</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="jquery.bxslider.css" rel="stylesheet" />
+  </head>
+  <!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author:Jesse Hardy #
+#Date Created:Jan 23, 2023 #
+#Version: 2.25 #
+#Date Last Modified:3/4/24 #
+#Modified by:Jesse Hardy  #
+#Modification log:
+
+Version 0.0 - 1/23/23 - Created index page and CSS
+Version 0.25 - 1/24/23 - Created about, service,  and contact pages applied CSS
+Version 0.5 - 1/29/23 - Added JavaScript to calculate pricing for customer
+Version 0.75 - 2/6/23 - Added a Contact form with Javascript to validate entries and then if entries all
+                        are filled the register button will take you to a page confirming your entry (confirm.html)
+                        and can take you back to index page.
+Version 1.0 - 2/7/23 2/8/23 - Moved the error message from the UL list it was attached to in the navagation
+                              to the main page and above the form you fill out so the navigation wasnt bugged.
+                              Also made it look nicer with added css for it.
+Version 1.25 - 2/9/23 - edited contact page to have more text. edited code to make more responsive.
+Version 1.5 - 2/10/23 -  add the FAQ Page Utilizing JS and JQuery and styling
+Version 1.75 - 2/25/23 - Add a About Page with content and added more design like background and media 
+                        queries for about page and whole website. Added slide show of Quotes and JS code for it.
+Version 2.0 - 3/3/23 -  Added a JQuery plugin bxslider for home page quotes.
+Version 2.25 - 3/4/23 - Added plugin cycle2 for about page and JQuery Accordion for the FAQ page Also edited some 
+                        css for the about page will revisit at a later date.
+Version 2.50 - 3/8/23 - Revisted about page and added media queries for the cycle images.
+                        Added Regualr Expressions to all JS as Applicable.
+                        Added Date and Time feature to and validation to the service page form.
+                        Updated logo to be bigger and more readable with the background white being pure white like the website white.
+ --
+------------------------------------------------------------------------------------------------------------------>
+
+  <body>
+    <header class="header">
+      <a class="logo" href="index.html"></a>
+      <input type="checkbox" id="menu-btn" class="menu-btn" />
+      <label class="menu-icon" for="menu-btn">
+        <span class="nav-icon"></span>
+      </label>
+      <ul class="menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="html/about.html">About</a></li>
+        <li><a href="html/faq.html">FAQ</a></li>
+        <li><a href="html/service.html">Services</a></li>
+        <li><a href="html/contact.html">Contact</a></li>
+      </ul>
+    </header>
+
+    <div class="banner">
+      <div class="content">
+        <h2>Life <span>Coaching</span></h2>
+        <br />
+        <p>
+          Life coaching - a safe place in a unsafe world<br /><br />
+          We here believe in <br />
+          Encouraging, Counceling, Guiding, and Achieving
+        </p>
+        <a id="calculate-cost-link">Calculate pricing for sessions</a>
+        <main>
+          <!--<h2>Positive Quotes:</h2>
+          <div id="slideshow">
+            <img
+              class="slide active"
+              src="images/neverquit.jpg"
+              alt="Never Quit"
+            />
+
+            <img class="slide" src="images/positive.jpg" alt="Positive" />
+            <img
+              class="slide"
+              src="images/believeyoucan.jpg"
+              alt="Believe You Can"
+            />
+            <img
+              class="slide"
+              src="images/thinkpositive.jpg"
+              alt="Think Positive"
+            />
+            <img class="slide" src="images/confidence.jpg" alt="Confidence" />
+            <img class="slide" src="images/helpinghand.png" alt="Help others" />
+            <img class="slide" src="images/rise.jpeg" alt="Rise" />
+          </div>-->
+          <ul id="slider">
+            <li>
+              <img src="images/neverquit.jpg" alt="a" title="Never Quit" />
+            </li>
+            <li>
+              <img src="images/positive.jpg" alt="a" title="Positive" />
+            </li>
+            <li>
+              <img
+                src="images/believeyoucan.jpg"
+                alt="a"
+                title="Believe in yourself"
+              />
+            </li>
+            <li>
+              <img
+                src="images/thinkpositive.jpg"
+                alt="a"
+                title="Think Postitive"
+              />
+            </li>
+            <li>
+              <img src="images/confidence.jpg" alt="a" title="Confidence" />
+            </li>
+            <li>
+              <img src="images/helpinghand.png" alt="a" title="Help Others" />
+            </li>
+            <li>
+              <img src="images/rise.jpeg" alt="a" title="Rise" />
+            </li>
+          </ul>
+          <p id="pager"></p>
+        </main>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="JS/jquery.bxslider.min.js"></script>
+    <script>
+      $(document).ready(() => {
+        $("#slider").bxSlider({
+          auto: true,
+          minSlides: 1,
+          maxSlides: 1,
+          slideWidth: 4500,
+          slideMargin: 10,
+          randomStart: true,
+          moveSlides: 1,
+          speed: 3000,
+          captions: true
+        });
+      });
+    </script>
+    <!-- <script src="JS/slide_show.js"></script>-->
+    <script src="JS/calculatePrice.js"></script>
+  </body>
+</html>
