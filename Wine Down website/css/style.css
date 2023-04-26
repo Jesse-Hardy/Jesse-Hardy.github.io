@@ -1,0 +1,73 @@
+* {
+  color: white;
+}
+/*Logo*/
+.logo img {
+  width: 100px;
+  height: auto;
+  border-radius: 10px;
+}
+/*parallax animation*/
+.parallax-section {
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.parallax-section2 {
+  background-attachment: scroll;
+}
+
+/* nav bar thickmess */
+.navbar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+/*color nav text*/
+a {
+  color: #d4010193 !important;
+}
+/* Offset the section when accessed via navbar link 
+ gave section1 space away from navbar*/
+:target::before {
+  content: "";
+  display: block;
+  height: 110px;
+}
+#section1 {
+  margin-top: 70px;
+}
+.text-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.solid {
+  border-top: 3px solid white;
+}
+
+#section1 {
+  background-image: url("/images/winePicture1.jpg");
+  border-radius: 10px;
+}
+
+#section2 {
+  background-image: url("/images/winePicture2.jpg");
+  border-radius: 10px;
+}
+
+#section3 {
+  background-image: url("/images/winePicture3.jpg");
+  border-radius: 10px;
+}
+
+#section4 {
+  background-image: url("/images/winePicture4.jpg");
+  border-radius: 10px;
+}
+
+#section5 {
+  background-image: url("/images/winePicture5.jpg");
+  border-radius: 10px;
+}

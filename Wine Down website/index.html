@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Parallax Site</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <!------------------------------------------------------------------------------------------------------------------
+#Original Author:Jesse Hardy #
+#Date Created:Apr 10, 2023 #
+#Version: 1.00 #
+#Date Last Modified:4/10/2023 #
+#Modified by:Jesse Hardy  #
+#Modification log:
+
+Version 1.0 - 4/10/2023 - Created Index page, added images to images folder, added css in the css page,
+built Navigation, Built parallax themed sections with text content inside the images and styled them.  
+ --
+------------------------------------------------------------------------------------------------------------------>
+  <body class="bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand logo" href="#">
+          <img src="images/Logo.png" alt="Wine Down Logo" />
+        </a>
+        <button
+          class="navbar-toggler mt-5"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul
+            class="navbar-nav mt-5 nav-tabs ms-auto nav-tabs-md-column active"
+          >
+            <li class="nav-item pe-4 pe-md-3 pe-lg-4 pe-xxl-5">
+              <a class="nav-link" href="#section1">About</a>
+            </li>
+            <li class="nav-item pe-4 pe-md-3 pe-lg-4 pe-xxl-5">
+              <a class="nav-link" href="#section2">Wine Tasting</a>
+            </li>
+            <li class="nav-item pe-4 pe-md-3 pe-lg-4 pe-xxl-5">
+              <a class="nav-link" href="#section3">Winery Orchard</a>
+            </li>
+            <li class="nav-item pe-4 pe-md-3 pe-lg-4 pe-xxl-5">
+              <a class="nav-link" href="#section4">Fruits</a>
+            </li>
+            <li class="nav-item pe-4 pe-md-3 pe-lg-4 pe-xxl-5">
+              <a class="nav-link" href="#section5">Wine Bottles</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container mt-5 pt-5 pb-3">
+      <section id="section1" class="parallax-section">
+        <div class="container d-flex flex-column justify-content-center vh-100">
+          <div class="text-container">
+            <h1 class="text-center">About Us</h1>
+            <p class="text-center">
+              At Wine Down, we believe that every sip of wine should be an
+              experience to remember. Our passion for wine is what sets us apart
+              from the rest. We carefully select each of our wines to ensure
+              that they are of the highest quality and provide a unique taste
+              experience that will leave you wanting more. Whether you're a
+              seasoned wine enthusiast or just starting out, we welcome you to
+              join us and discover the wonderful world of wine.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="container pt-5 pb-3">
+      <section id="section2" class="parallax-section">
+        <div class="container d-flex flex-column justify-content-center vh-100">
+          <div class="text-container">
+            <h1 class="text-center">Wine Tasting</h1>
+            <p class="text-center">
+              Come join us for a wine tasting experience like no other. Our
+              knowledgeable staff will guide you through a selection of our
+              finest wines, providing insight into their unique characteristics
+              and origins. Whether you're a beginner or a seasoned wine
+              enthusiast, our wine tastings are sure to leave you with a greater
+              appreciation for the art of winemaking.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="container pt-5 pb-3">
+      <section id="section3" class="parallax-section2">
+        <div class="container d-flex flex-column justify-content-center vh-100">
+          <div class="text-container">
+            <h1 class="text-center">Winery Orchard</h1>
+            <p class="text-center">
+              Our winery orchard is where the magic happens. With acres of
+              carefully tended vines, we produce some of the finest grapes in
+              the region. Our winemakers use these grapes to create the unique
+              blends that make up our signature wines. Come take a stroll
+              through the orchard and experience the beauty and serenity of our
+              vineyard.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="container pt-5 pb-3">
+      <section id="section4" class="parallax-section">
+        <div class="container d-flex flex-column justify-content-center vh-100">
+          <div class="text-container">
+            <h1 class="text-center">Fruits</h1>
+            <p class="text-center">
+              In addition to our grapes, we also grow a variety of other fruits
+              in our orchard. From crisp apples to juicy peaches, our fruit
+              selection is sure to satisfy your sweet tooth. Take a basket and
+              pick your own, or try some of our delicious fruit jams and
+              preserves.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="container pt-5 pb-3">
+      <section id="section5" class="parallax-section">
+        <div class="container d-flex flex-column justify-content-center vh-100">
+          <div class="text-container">
+            <h1 class="text-center">Wine Bottles</h1>
+            <p class="text-center">
+              Our wine bottles are a work of art, each one carefully crafted to
+              reflect the unique qualities of the wine inside. From the smooth
+              curves of our red wine bottles to the elegant simplicity of our
+              white wine bottles, every detail is designed to enhance your
+              wine-drinking experience. And with a wide selection of varietals
+              and vintages, there's something for everyone at Wine Down.
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
