@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Wine Shop</title>
+  </head>
+ <!------------------------------------------------------------------------------------------------------------------
+#Original Author:Jesse Hardy #
+#Date Created:Apr 10, 2023 #
+#Version: 1.00 #
+#Date Last Modified:4/10/2023 #
+#Modified by:Jesse Hardy  #
+#Modification log:
+
+Version 1.0 - 4/10/2023 - Created Index page, added images to images folder, added css in the css page,
+built Navigation, Built parallax themed sections with text content inside the images and styled them. 
+Version 1.5 - 4/13/2023 - Added JS code for nav bar. pulled logo from images folder becuase it was not being served
+correctly even though the path was fine.
+
+ --
+------------------------------------------------------------------------------------------------------------------>
+ 
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="Logo.png" width="105" alt="Logo Icon" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#events">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#wines">Wines</a>
+              </li>
+              
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="d-flex justify-content-center">
+              <img class="img" src="images/Hero.png" alt="The Wine Shop photo" style="object-fit: contain; width: 100%; max-height: 800px;" />
+            </div>
+          </section>
+        <section id="about">
+          <div class="container">
+            <h2>About Us</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
+              Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
+              Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris
+              massa. Vestibulum lacinia arcu eget nulla.
+            </p>
+          </div>
+        </section>
+
+        <section id="gallery" class="parallax-gallery">
+          <div class="container">
+            <h2 class="text-center mb-5">Gallery</h2>
+            <div class="row">
+              <div class="col-lg-6  mb-4">
+                <img src="images/winePicture1.jpg" alt="Wine 1" class="img-fluid">
+              </div>
+              <div class="col-lg-6  mb-4">
+                <img src="images/winePicture2.jpg" alt="Wine 2" class="img-fluid">
+              </div>
+              <div class="col-lg-6  mb-4">
+                <img src="images/winePicture3.jpg" alt="Wine 3" class="img-fluid">
+              </div>
+              <div class="col-lg-6  mb-4">
+                <img src="images/winePicture4.jpg" alt="Wine 4" class="img-fluid">
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section id="events">
+          <div class="container">
+            <h2>Upcoming Events</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus luctus
+              urna sed urna ultricies ac tempor dui sagittis. In condimentum facilisis
+              porta. Sed nec diam eu diam mattis viverra. Nulla fringilla, orci ac
+              euismod semper, magna diam porttitor mauris, quis sollicitudin sapien justo
+              in libero. Vestibulum mollis mauris enim. Morbi euismod magna ac lorem
+              rutrum elementum. Donec viverra auctor lobortis. Pellentesque eu est a
+              nulla placerat dignissim.
+            </p>
+          </div>
+        </section>
+        
+
+        <section id="wines" class="parallax">
+          <div class="container">
+            <h2>Wines</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in
+              lobortis nisl, vitae iaculis sapien. Phasellus ultrices gravida
+              massa, ac commodo nunc dapibus a. Duis velit est, lobortis eu
+              tristique nec, adipiscing id metus. Nam et sapien dolor, quis
+              venenatis nisi. Vivamus accumsan feugiat sem, a imperdiet libero
+              volutpat et.
+            </p>
+          </div>
+        </section>
+
+        <section id="contact">
+          <div class="container">
+            <h2>Contact Us</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+              eleifend a magna nec egestas. In consequat nisi sit amet lorem
+              vehicula, quis consequat lorem vehicula. Nunc aliquet risus ac
+              finibus ullamcorper. Pellentesque tempor dolor ac lectus
+              ullamcorper, ut porttitor magna auctor. Quisque venenatis nisi at
+              odio porttitor, vel ullamcorper ipsum ultrices.
+            </p>
+          
+        </section>
+      </div>
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
