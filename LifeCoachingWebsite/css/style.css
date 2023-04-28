@@ -36,7 +36,7 @@ body {
   justify-content: start;
   width: 250px;
   height: 200px;
-  background-image: url("/images/WebsiteLogo.png");
+  background-image: url("//images/WebsiteLogo.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
