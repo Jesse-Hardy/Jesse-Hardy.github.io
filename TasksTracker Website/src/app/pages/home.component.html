@@ -1,0 +1,83 @@
+<div class="container">
+  <h1 class="text-center text-info">Task Manager</h1>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4 my-4">
+    <div class="col">
+      <div class="card h-100 border-info text-center bg-transparent">
+        <div class="card-body">
+          <h4 class="card-title text-warning">Total tasks</h4>
+          <p class="card-text text-info">
+            <span class="text-secondary">{{ totalTasks }}</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 border-info text-center bg-transparent">
+        <div class="card-body">
+          <h4 class="card-title text-warning">Completed tasks</h4>
+          <p class="card-text text-info">
+            <span class="text-secondary">{{ completedTasks }}</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 border-info text-center bg-transparent">
+        <div class="card-body">
+          <h4 class="card-title text-warning">Tasks due today</h4>
+          <p class="card-text text-info">
+            <span class="text-secondary">{{ tasksDueToday }}</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="my-4">
+    <h4 class="text-warning text-center">Add New Task</h4>
+    <form (submit)="addTask($event)" class="d-flex flex-column">
+      <input
+        [(ngModel)]="newTaskTitle"
+        name="title"
+        placeholder="Task Title"
+        class="form-control mb-2 bg-transparent text-info"
+        required
+      />
+      <textarea
+        [(ngModel)]="newTaskDescription"
+        name="description"
+        placeholder="Task Description"
+        class="form-control mb-2 bg-transparent text-info"
+        required
+      ></textarea>
+      <button type="submit" class="btn btn-info">Add Task</button>
+    </form>
+  </div>
+
+  <div class="my-4">
+    <h4 class="text-warning text-center">List of Tasks</h4>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col" *ngFor="let task of tasks">
+        <div class="card h-100 border-info bg-transparent">
+          <div class="card-body">
+            <input
+              type="checkbox"
+              [(ngModel)]="task.completed"
+              (change)="taskService.updateTask(task)"
+              class="me-2"
+            />
+            <h5 class="card-title text-warning">{{ task.title }}</h5>
+            <p class="card-text text-secondary">{{ task.description }}</p>
+            <button
+              class="btn btn-danger btn-sm float-end"
+              (click)="deleteTask(task.id)"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,59 @@
+<div class="container py-5">
+  <h1 class="text-center text-info pb-3">Frequently Asked Questions</h1>
+  <div
+    class="accordion bg-transparent text-white border-info"
+    id="faqAccordion"
+  >
+    <div class="accordion-item bg-transparent border-info">
+      <h2 class="accordion-header text-success" id="headingOne">
+        <button
+          class="accordion-button bg-transparent text-warning"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseOne"
+          aria-expanded="true"
+          aria-controls="collapseOne"
+        >
+          How do I create a task?
+        </button>
+      </h2>
+      <div
+        id="collapseOne"
+        class="accordion-collapse collapse show"
+        aria-labelledby="headingOne"
+        data-bs-parent="#faqAccordion"
+      >
+        <div class="accordion-body text-white">
+          To create a task, go to the homepage and fill in the 'Add New Task'
+          form with your task details. Click 'Add Task' to save your task.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item bg-transparent border-info">
+      <h2 class="accordion-header text-success" id="headingTwo">
+        <button
+          class="accordion-button bg-transparent text-warning collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#collapseTwo"
+          aria-expanded="false"
+          aria-controls="collapseTwo"
+        >
+          How do I delete a task?
+        </button>
+      </h2>
+      <div
+        id="collapseTwo"
+        class="accordion-collapse collapse"
+        aria-labelledby="headingTwo"
+        data-bs-parent="#faqAccordion"
+      >
+        <div class="accordion-body text-white">
+          To delete a task, find the task in the task list on the homepage, then
+          click the 'Delete' button on the right side of the task.
+        </div>
+      </div>
+    </div>
+    <!-- Add more accordion items for more questions and answers -->
+  </div>
+</div>

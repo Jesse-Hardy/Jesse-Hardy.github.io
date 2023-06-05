@@ -1,0 +1,7 @@
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css";
+
+html,
+body {
+  font-family: sans-serif;
+  background-color: rgb(17, 17, 17);
+}
